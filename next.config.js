@@ -6,15 +6,11 @@ const withNextra = require("nextra")({
 });
 
 module.exports = withNextra({
-  // reactStrictMode: true,
-  experiments: {
-    esmExternals: true,
-  },
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/docs',
+        source: '/docs',
+        destination: '/',
         permanent: true,
       },
     ]
